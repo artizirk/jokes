@@ -1,0 +1,10 @@
+13:25 <+Keanu73> woah
+13:25 <+Keanu73> the autojoin is pretty fast
+13:25 <+Keanu73> and hi friends :)
+13:36 <~Cool_Fire> Hey
+13:38 <+Keanu73> Cool_Fire: btw I discovered something
+13:38 <+Keanu73> when you cd into /home, it displays all the user's shells
+13:38 <+Keanu73> including mine and yours
+13:39 <+Keanu73> but when you cd into someone's user directory, it replies with permission denied lol
+13:44 <+mikroskeem> Keanu73: seems legit
+

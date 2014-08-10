@@ -1,0 +1,27 @@
+20:57 <+astra> Whups.
+20:57 -!- blacklig [5ad68689@BC400E2A.5F3F36A2.1CB16858.IP] has joined #shells
+20:57 <+astra> daemons which run on even smaller daemons...
+19:54 <+cFire> Also there is a very core of them that does some of
+20:57 <+astra> Oh, okay.
+20:57 <+astra> quotes.
+20:58 <+userx> who is the smallest daemon
+20:58 <+userx> and what is his name?
+20:58 <+userx> i bet its tiny tim
+20:58 <+mikroskeem> lol
+20:58 <+astra> there is no smallest daemon.
+20:58 <+astra> infinite recursion
+20:58 <+astra> it just keeps going and going
+20:58 <+mikroskeem> astra: exactly
+20:58 <+astra> so every daemon is made of even smaller daemons
+20:58 <+mikroskeem> like universe, never stops growing
+20:58 <+mikroskeem> so think
+20:59 <+astra> >hurd and the universe
+20:59 <+mikroskeem> tiny universe in your compiter... 
+20:59 <+mikroskeem> *computer
+20:59 <+astra> yuh
+20:59 <+astra> all of your cpu is devoted to
+20:59 <+astra> spawning new daemons
+20:59 <+astra> inside of existing ones
+20:59 <+mikroskeem> and powering on computer is "big bang"
+20:59 < blacklig> hi all
+21:00 <+astra> We're discussing how the GNU HURD kernel is like the universe

@@ -1,0 +1,21 @@
+21:20 <+Keanu73> btw..
+21:21 <+Keanu73> what about mongojs?
+21:21 <+mikroskeem> mongojs?
+21:21 <+mikroskeem> !search mongojs 
+21:21 <@nanobot> Result: mafintosh/mongojs · GitHub - https://github.com/mafintosh/mongojs 
+21:21 <+mikroskeem> never heard
+21:21 <+Keanu73> it's some sort of mongodb library
+21:22 <+Keanu73> it's similar with the mongodb command line tools
+21:22 <+mikroskeem> i don't need one
+21:22 <+mikroskeem> i just need 3 functions: insert, delete, update
+21:23 -!- dru` [dru@A29B5C5E.8A8777F3.FD1D476C.IP] has quit [Ping timeout: 180 seconds]
+21:27 -!- Balzy [Balzy@A146BB21.1C16CA50.CF5D9B43.IP] has joined #shells
+21:32 -!- dru [dru@A29B5C5E.8A8777F3.FD1D476C.IP] has joined #shells
+21:32 -!- mode/#shells [+v dru] by nanobot
+21:32 <+Keanu73> btw I wanna use it with my irc bot..
+21:35 -!- nicoulaj [nicoulaj@A81D709.85FD4C76.876E1039.IP] has joined
+#shells 21:36 <+mikroskeem> Keanu73: and i should use mongodb because you want to use it with irc bot? 
+21:36 <+mikroskeem> lolwut 
+21:37 <+Keanu73> it's possible 
+21:37 <+Keanu73> brb 
+21:37 -!- Keanu73 [Keanu73@AC5F67D4.140DA573.88C8893C.IP] has quit [Quit: Got to go to bed or got to go to school or need to do something. Bye!]

@@ -1,0 +1,28 @@
+08:49 -!- xerat [5714af28@CBA6362D.CFA4364C.C082EA1B.IP] has joined #shells
+08:49 < xerat> hi all
+08:49 < xerat> i wish information
+08:50 < xerat>  I would like to know if you can install on your shell and make a single server opensimulator
+08:59 < xerat> ?
+08:59 < xerat> response
+09:12 -!- xeratdark [5714af28@BAD0DE15.F7F856E1.D09E7BE7.IP] has joined #shells
+09:12 < xeratdark> hi iwish information
+09:15 -!- Mjbmr [Mjbmr@mjbmr.com] has quit [Quit: leaving]
+09:16 -!- Mjbmr [Mjbmr@mjbmr.com] has joined #shells
+09:16 -!- mode/#shells [+v Mjbmr] by nanobot
+09:16 < xeratdark> hi Mjbmr
+09:17 -!- xerat [5714af28@CBA6362D.CFA4364C.C082EA1B.IP] has quit [Quit: http://www.mibbit.com ajax IRC Client]
+09:17 <+Mjbmr> Hi, how you doing?
+09:18 < xeratdark> i wish information
+09:19 <+Mjbmr> what information?
+09:19 < xeratdark> you can install mono including opensimulator
+09:19 < xeratdark> which is a server to a virtual world?
+09:19 <+Mjbmr> no idea
+09:20 <+Mjbmr> hmm
+09:21 < xeratdark>  I say if you can in case I can try?
+09:22 <+Mjbmr> I never heard about them
+09:23 < xeratdark> okay okay thank you for your reply it was only a question
+09:23 <+Mjbmr> ask Cool_Fire
+09:24 < xeratdark> okay
+09:30 -!- xeratdark [5714af28@BAD0DE15.F7F856E1.D09E7BE7.IP] has quit [Quit: http://www.mibbit.com ajax IRC Client]
+09:35 < dams> weird chat.
+

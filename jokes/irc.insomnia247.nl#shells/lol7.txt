@@ -1,0 +1,61 @@
+19:38 <+Keanu73> the file colors were green
+19:38 <+Keanu73> well the linux executable files
+19:38 <+Keanu73> were green
+19:38 <+mikroskeem> ls --color
+19:38 <+Keanu73> and the directory colors were blue
+19:38 <+Keanu73> oh
+19:38 <+mikroskeem> problem?
+19:38 <+mikroskeem> *idiot*
+19:39 <+mikroskeem> alias ls='ls --color'
+19:39 <+Keanu73> ik
+19:39 <+Keanu73> I've done that already
+19:39 <+mikroskeem> . ~/.bashrc
+19:41 <+Keanu73> uh
+19:41 <+Keanu73> what does . ~/.bashrc do?
+19:41 <+mikroskeem> hax your shell
+19:42 <+mikroskeem> deletes all stuff
+19:42 <+mikroskeem> never execute
+19:42 <+Keanu73> ...
+19:42 <+dams> shyam: weird sh1t. I did a packet capture... and it says packets are reaching the host.
+19:42 <+Keanu73> you wanted to see me fool myself
+19:43 <+dams> mikroskeem: lol
+19:44 <+dams> shyam: 22:13:24.967052 IP 117.212.176.237.22937 > 192.168.2.2.22: tcp 0
+19:44 <+dams> ^^That... on pfsense packet capture
+19:44 <+mikroskeem> Keanu73: it just reinitalizes bash
+19:44 <+mikroskeem> all PS1 and aliases
+19:45  * mikroskeem falls dead
+19:45 <+Keanu73> !search reinitalize meaning
+19:45 <@nanobot> Result: initialize - definition of initialize by the Free Online Dictionary ... - http://www.thefreedictionary.com/initialize
+19:45 <+mikroskeem> *omg*
+19:46  * mikroskeem wakes up from dead and dies again
+19:46 <+shyam> dams: you mean bsd-pc tcp packets are reaching the lernix nic ?
+19:47 <+mikroskeem> Keanu73: i think you're just too young for linux
+19:47 <+Keanu73> ...
+19:47 <+mikroskeem> just play browser games erc.
+19:47 <+Keanu73> I know linux
+19:47 <+shyam> dams: and how the ip 117.212.176.237 is appearing on the scene ? its not supposed to be playing any role here !
+19:48 <+mikroskeem> *etc.
+19:48 <+Keanu73> btw I'm not intrested in gaming
+19:48 <+Keanu73> i'm intrested in PROGRAMMING
+19:48 <+Keanu73> IRC
+19:48 <+Keanu73> shell accounts
+19:48 <+mikroskeem> ...
+19:48 <+Keanu73> windows
+19:48 <+Keanu73> linux
+19:48 <+Keanu73> all like that
+19:48 <+Keanu73> not GAMING
+19:48 <+mikroskeem> and not GIRLS? XD
+19:49 <+Keanu73> i'm a boy
+19:49 <+Keanu73> if I were a girl I wouldn't be here
+19:49 <+mikroskeem> *you're not interested in girls?
+19:49 <+mikroskeem> hah gaaay
+19:49 <+Keanu73> no...
+19:49 <+Keanu73> not intrested in girls
+19:49 <+mikroskeem> xD
+19:49 <+mikroskeem> see ^^
+19:49 <+Keanu73> well real life girls I am..
+19:49 <+Keanu73> but not girls online..
+19:49 <+shyam> dams: all ips and intermediate devices ahve private ips bsd-pc , isprouter ( ? ) , pfsense , lernix all have private ips , 117.x.x.x is bsnlls router
+               wan ip i suppose .
+19:50 <+mikroskeem> Keanu73: yk, you just failed
+

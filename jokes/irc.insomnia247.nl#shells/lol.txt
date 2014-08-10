@@ -1,0 +1,33 @@
+14:27 <+Keanu73> I know how to compile your source code into a windows program on linux
+14:27 <+Keanu73> gcc whatever.c -o whatever.exe
+14:27 <+Keanu73> pretty smart?
+14:28 <+Keanu73> mmm?
+14:32 < PowerWing> That should only influecnce the naming..
+14:32 < PowerWing> not actually compile it to a windows executable format.
+14:33 <+Keanu73> o
+14:34 <+Keanu73> :(
+14:34 <+Keanu73> then how do I?
+14:36 <+Keanu73> oh wait
+14:36 <+Keanu73> do you need mingw32?
+14:37 <+Keanu73> oh my
+14:37 <+Keanu73> when you change directory to /home, it comes up with all the users of the shells
+14:39 <+Keanu73> woohoo
+14:41 <+Keanu73> PowerWing: btw, mingw32 is installed]
+14:42 <+Keanu73> on everybody's shell account
+14:42 < PowerWing> Depends do you want to create a 32 bit windows app or not?
+14:43 <+Keanu73> http://prntscr.com/3767q7
+14:43 <+Keanu73> woohoo
+14:43 <+Keanu73> my calculator works! :D
+14:44 <+Keanu73> PowerWing: wanna try my calculator on windows?
+14:45 <+Keanu73> download it at keanu73.insomnia247.nl/programs/calculator/
+14:45 <+Keanu73> btw
+14:45 <+Keanu73> when you download it, don't click it
+14:45 <+Keanu73> use the command prompt to run it
+14:47 <~Cool_Fire> "want to download and run this arbitrary windows executable I just made?"
+14:47 <~Cool_Fire> Euuuuhhh.....
+14:55 <+mikroskeem> Keanu73: how did you compile it?
+14:56 <+Keanu73> I used i586-mingw32msvc-gcc -o calculator.exe calculator.c
+14:57 <+Keanu73> i'm a genius
+15:05 <+mikroskeem> okay
+15:05 <+mikroskeem> "genius"
+

@@ -1,0 +1,4 @@
+23:07 < PigDude> Eugene: what does AOSP mean?
+23:07 < Eugene> It means you suck at using Google
+23:07 < PigDude> Eugene: in the context of "AOSP ContactsProvider"?
+
