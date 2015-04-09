@@ -2,6 +2,7 @@
 
 import base64
 import os
+from urllib.parse import quote
 from datetime import datetime
 
 jokes_dir = "."
@@ -22,7 +23,7 @@ html = """<!DOCTYPE html>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="header">
-        <h1>The best IRC jokes in the Internet</h1>
+        <h1><a href="/">The best IRC jokes in the Internet</a></h1>
         </div>
         <hr>
         {posts}
@@ -48,35 +49,59 @@ h2>small {
 pre {
     white-space: pre-wrap;
 }
-footer a {
+a {
     color: black;
 }"""
 
 post_template ="""<div id="{title}">
-    <a name="#{title}"><h2>{title} <small>({tag} - {mtime})</small></h2></a>
+    <h2><a name="#{title}" href="{perm_link}">{title}</a> <small>({tag} - {mtime})</small></h2>
     <p>
         <pre>{post}</pre>
     </p>
 </div>"""
-favicon = ("AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAA"
-    "AAAAAAEAAAAAAAAAD/hAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREQAAAA"
-    "ABEREREAAAAAEQAAEQAAAAARAAARAAAAAAAAABEAAAAAAAAAEQAAAAAAAAARAAAAAAAAABEAA"
-    "AAAAAAAEQAAAAAAAAARAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+favicon = base64.b64decode("AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABA"
+    "AAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD/hAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    "AAAAABEREQAAAAABEREREAAAAAEQAAEQAAAAARAAARAAAAAAAAABEAAAAAAAAAEQAAAAAAAAAR"
+    "AAAAAAAAABEAAAAAAAAAEQAAAAAAAAARAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    "AAAA")
 
 def mtime_to_human(mtime):
     return datetime.fromtimestamp(mtime)
 
 
 def application(env, start_response):
+    # convert PATH_INFO to utf-8
+    env['PATH_INFO'] = env['PATH_INFO'].encode('latin1').decode()
+
+    # return a nice favicon
     if env["PATH_INFO"] == "/favicon.ico":
         start_response('200 OK', [('Content-Type', 'image/x-icon')])
-        return [base64.b64decode(favicon)]
+        return [favicon]
 
-    if env["PATH_INFO"] == "/style.css":
-        start_response('200 OK', [('Content-Type', 'text/css')])
-        return [style.encode()]
+    # permalinks for jokes
+    if env["PATH_INFO"].split("/")[1] in os.listdir(jokes_dir):
+        tag = env["PATH_INFO"].split("/")[1]
+        joke = env["PATH_INFO"].split("/")[2]
+
+        # if the joke doesn't exist then show a 404 error page
+        try:
+            mtime = os.stat(os.path.join(jokes_dir, tag, joke)).st_mtime
+        except FileNotFoundError as err:
+            start_response('404 ERROR', [('Content-Type', 'text/html')])
+            message = '<h1>Error 404 <small>Joke not found</small></h1><a href="/">Go back home</a><br></br>'
+            return [html.format(posts=message, style=style).encode()]
+
+        f = open(os.path.join(jokes_dir, tag, joke), "rb")
+        p = post_template.format(title=joke,
+                                tag=tag,
+                                mtime=mtime_to_human(mtime),
+                                perm_link=quote("".join(("/", tag, "/", joke))),
+                                post=f.read().decode().replace("<", "&lt;").replace(">", "&gt;"))
+        start_response('200 OK', [('Content-Type', 'text/html')])
+        return (html.format(posts=p, style=style).encode())
+
 
     # if user wants anything else then show them 404
     if env["PATH_INFO"] != "/":
@@ -84,6 +109,10 @@ def application(env, start_response):
         message = '<h1>Error 404 <small>Page not found</small></h1><a href="/">Go back home</a><br></br>'
         return [html.format(posts=message, style=style).encode()]
 
+
+    # if env["PATH_INFO"] == "/":  # pretty much returns the index page
+
+    # get list of jokes
     posts = []
     files = []
     dirs = os.listdir(jokes_dir)
@@ -102,14 +131,17 @@ def application(env, start_response):
     # sort jokes by last modification time
     files.sort(key=lambda x: x[2], reverse=True)
 
+    # create main page body of all the jokes
     for joke in files:
         f = open(os.path.join(jokes_dir, joke[0], joke[1]), "rb")
         p = post_template.format(title=joke[1],
                                 tag=joke[0],
                                 mtime=mtime_to_human(joke[2]),
+                                perm_link=quote("".join(("/", joke[0], "/", joke[1]))),
                                 post=f.read().decode().replace("<", "&lt;").replace(">", "&gt;"))
         f.close()
         posts.append(p)
+    # all good, return the html
     start_response('200 OK', [('Content-Type', 'text/html')])
     return [html.format(posts=''.join(posts), style=style).encode()]
 
