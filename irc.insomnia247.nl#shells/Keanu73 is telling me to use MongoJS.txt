@@ -13,8 +13,8 @@
 21:32 -!- dru [dru@A29B5C5E.8A8777F3.FD1D476C.IP] has joined #shells
 21:32 -!- mode/#shells [+v dru] by nanobot
 21:32 <+Keanu73> btw I wanna use it with my irc bot..
-21:35 -!- nicoulaj [nicoulaj@A81D709.85FD4C76.876E1039.IP] has joined
-#shells 21:36 <+mikroskeem> Keanu73: and i should use mongodb because you want to use it with irc bot? 
+21:35 -!- nicoulaj [nicoulaj@A81D709.85FD4C76.876E1039.IP] has joined #shells
+21:36 <+mikroskeem> Keanu73: and i should use mongodb because you want to use it with irc bot? 
 21:36 <+mikroskeem> lolwut 
 21:37 <+Keanu73> it's possible 
 21:37 <+Keanu73> brb 
