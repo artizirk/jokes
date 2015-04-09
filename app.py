@@ -100,7 +100,7 @@ def application(env, start_response):
                                 perm_link=quote("".join(("/", tag, "/", joke))),
                                 post=f.read().decode().replace("<", "&lt;").replace(">", "&gt;"))
         start_response('200 OK', [('Content-Type', 'text/html')])
-        return (html.format(posts=p, style=style).encode())
+        return [html.format(posts=p, style=style).encode()]
 
 
     # if user wants anything else then show them 404
