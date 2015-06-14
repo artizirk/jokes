@@ -20,7 +20,8 @@ html = """<!DOCTYPE html>
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser.
+            Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="header">
         <h1><a href="/">The best IRC jokes in the Internet</a></h1>
@@ -82,13 +83,14 @@ def application(env, start_response):
 
     # permalinks for jokes
     if env["PATH_INFO"].split("/")[1] in os.listdir(jokes_dir):
-        tag = env["PATH_INFO"].split("/")[1]
-        joke = env["PATH_INFO"].split("/")[2]
-
         # if the joke doesn't exist then show a 404 error page
         try:
+            tag = env["PATH_INFO"].split("/")[1]
+            joke = env["PATH_INFO"].split("/")[2]
             mtime = os.stat(os.path.join(jokes_dir, tag, joke)).st_mtime
-        except FileNotFoundError as err:
+            if not joke:
+                raise FileNotFoundError()
+        except (FileNotFoundError, IndexError) as err:
             start_response('404 ERROR', [('Content-Type', 'text/html')])
             message = '<h1>Error 404 <small>Joke not found</small></h1><a href="/">Go back home</a><br></br>'
             return [html.format(posts=message, style=style).encode()]
