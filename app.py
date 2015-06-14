@@ -55,7 +55,7 @@ a {
 }"""
 
 post_template ="""<div id="{title}">
-    <h2><a name="#{title}" href="{perm_link}">{title}</a> <small>({tag} - {mtime})</small></h2>
+    <h2><a name="#{title}" href="{perm_link}">{title}</a> <small>({tag})</small></h2>
     <p>
         <pre>{post}</pre>
     </p>
