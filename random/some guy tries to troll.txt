@@ -1,0 +1,41 @@
+Got this by randomly browsing http://ix.io/user/ (http://ix.io/k3X)
+
+2015-04-12 00:53:26	<choki>	damn, why is it so hard to install arch? someone needs to create question form where i can select each method with all wistles and bells and print me only the wiki articles i need
+2015-04-16 22:04:58	<choki>	cgdisk sucks
+2015-04-16 22:05:55	<choki>	i know what im doing
+2015-04-16 22:08:39	<choki>	i dont care about i just want the fuckin partition and stupid cgdisk to work, thats all
+2015-04-16 22:10:53	<choki>	 i dont need explain. i need stupid cgdisk to work!!!
+2015-04-16 22:11:51	<choki>	!give krav shit
+2015-04-16 22:25:23	<choki>	sudo apt-get purge arch
+2015-04-16 22:31:19	<choki>	okey, ubuntu is installed, now i install pacman...
+2015-04-17 01:29:13	<choki>	stupid
+2015-04-17 01:30:26	<choki>	stupid design i hate, developers know nothing about design. why not just lowercase letters like *everyone* does? just stupid... -.-
+2015-04-17 01:32:08	<choki>	WHY NOT JUST LUKSFORMAT!
+2015-04-17 01:32:42	<choki>	this syntax is stupid
+2015-04-17 01:34:06	<choki>	stupid-cryptsetup-is-stupid seems to be a good one! thanks!
+2015-04-17 01:36:08	<choki>	M-x stfu
+2015-04-17 01:38:10	<choki>	Earnestly: can you grep the shit out of ya head?
+2015-04-17 01:38:41	<choki>	Earnestly | grep shit
+2015-04-17 01:46:05	<choki>	how do i tell my girlfriend i switch back to ubuntu? im scared she will leave me :(
+2015-04-20 01:04:20	<choki>	Can someone tell me why the fuck this stupid bug is not written down in the wiki? https://savannah.gnu.org/bugs/?41524
+2015-04-20 01:04:35	<choki>	!suck
+2015-04-20 01:11:23	<choki>	I WILL EDIT THE WIKI WITH A BIG RED BANNER TELLING PEOPLE ABOUT THIS SHIT BUG!!!
+2015-04-20 01:11:50	<sheep>	choki: stop trolling/
+2015-04-20 01:11:53	<choki>	no
+2015-04-20 01:12:37	<choki>	stupid sick people
+2015-04-20 01:13:38	<choki>	dont tell me shit! every arch user is telling me "yo read the wiki dude it is all in there" just STUPID! NO: IT IS NOT ALL IN THERE!
+2015-04-20 01:14:47	<choki>	arch users suck because they feel so great! i use ubuntu, i dont care about this shit anymore...
+2015-04-20 01:15:02	<choki>	arch has the wrost community ever!
+2015-04-20 01:22:36	<choki>	ARCH SUCKS ENTIRELY! NOW I HAVE TO INSTALL COMPLETELY EVERYTHING! STUPID SHIT HIPPSTER LINUX!! GO TO HELL WITH UR SUPER COOL AND BETTER OS AND WOW IT IS SO MUCH MORE SIMPLER AND OH IT IS SO MUCH BETTER THAN UBUNTU!
+2015-04-24 13:41:20	<choki>	every arch user just follows the HYPE :D
+2015-04-24 13:43:03	<choki>	im so proud im now an arch user :D
+2015-07-12 20:42:00	<choki>	or i guess u just want to look cool, i can understand!
+2015-07-12 20:42:23	<choki>	wow, look ma, what pro using all terminal stuff yo baby yo baby yo!
+2015-07-12 20:43:06	<choki>	yo ima 14 yo gui usin arch bro
+2015-07-12 20:45:37	<choki>	ima lil kid with i7 quad plus titan :D :D
+2015-07-12 20:49:54	<choki>	rotaerk: yeah but why config if i have all in a lxterminal or xfce terminal? the hype about urxvt is bullshit.
+2015-07-15 15:19:50	<choki>	sorry i can't paste links yet because this SUPER HYPE about urxvt can't even paste by default
+2015-07-15 15:20:29	<choki>	im just using it to look more like the default arch user u kno
+2015-07-18 19:23:25	<choki>	finally the script kiddies removed !ubuntu
+2015-07-19 15:40:57	<choki>	stop trolling pls
+2015-08-02 16:01:36	<choki>	Why does my file-roller look so weird??? Stupid gnome look like. 
