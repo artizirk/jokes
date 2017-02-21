@@ -1,0 +1,70 @@
+21:15 < Justin> JO guys :)
+21:15 < Justin> i have a question about packets :D
+21:15 -!- Justin is now known as Guest57965
+21:15 < Guest57965> Hello guys :D
+21:17 < Tachyon_> shoot
+21:20 < PolarizedIons> pew! pew!
+21:32 < Guest57965> hey guys i have a question :D
+21:32 < mikroskeem> https://0x0.st/4Cp.jpg
+21:32 < mikroskeem> Guest57965: don't ask to ask
+21:32 < Guest57965> ok ^^
+21:32 < Guest57965> so im trying to give my npc armor
+21:32 < Guest57965> but im new to packets to i guess im just to stupid
+21:33 < Guest57965> https://hastebin.com/osowivibak.cpp
+21:33 < Guest57965> have a look
+21:33 < Tachyon_> this is java isn't it ?
+21:34 < Guest57965> yeah it is
+21:34 < Tachyon_> my hearth was happy when I saw "cpp"
+21:34 < Guest57965> can anybody help meh :D ?
+21:38 < mikroskeem> what does setValue do?
+21:38 < mikroskeem> set value using reflection?
+21:39 < Guest57965> yes
+21:39 < killme> why not just use the proper constructor?
+21:39 < mikroskeem> ^
+21:39 < Guest57965> what do you mean ?
+21:39 < killme> the no args constructor is mainly just for reading the packet
+21:40 < killme> there also is PacketPlayOutEntityEquipment(int , EnumItemSlot, ItemStack );
+21:41 < Guest57965> well
+21:41 < Guest57965> i dont know how exactly im going to use that :D beause everytime i try it gives me an error
+21:41 < killme> What kind of error?
+21:41 < Guest57965> wait do i use it like this   PacketPlayOutEntityEquipment hel = PacketPlayOutEntityEquipment(entityid, 5, new ItemCreator().setMaterial(Material.LEATHER_HELMET).create());
+21:42 < Guest57965> or without the variable name
+21:42 < killme> you need to use the enum instead of just 5
+21:42 < Guest57965> which enum xD ?
+21:42 < Guest57965> wait
+21:42 < killme> EnumItemSlot
+21:42 -!- zhuyifei1999_ [uid97661@wikimedia/zhuyifei1999] has quit [Quit: Connection closed for inactivity]
+21:43 < Guest57965> does not exist oO
+21:44 < Guest57965> http://prntscr.com/ebpahr
+21:46 < Guest57965> btw im using 1.8.8
+21:46 < killme> You probably need to look up the correct parameters in the source then
+21:48 < Guest57965> i guess i need to use minewcraft.server itemstack
+21:50 < Guest57965> when do i need to send the packet ?
+21:50 < Guest57965> after i spawned the entity right ?
+21:50 < Guest57965> because http://prntscr.com/ebpdxc does not work
+21:57 < killme> You need to send it after the entity is spawned and the last vanilla equipment packet is sent
+21:58 < killme> wouldn't it be easier though to use protocollib? As you seem to already run on bukkit
+21:58 < Guest57965> so it should work excatly like this right ? wait a second :D
+21:59 < Guest57965> http://prntscr.com/ebpipe
+22:00 < Guest57965> i have spigot and i dont like to use other people work
+22:00 < Guest57965> and also i need to set the depensity and all that crap
+22:02 -!- Jailout20001 [~Jailout20@unaffiliated/jailout2000] has joined #mcdevs
+22:02 < mikroskeem> > i have spigot and i dont like to use other people work
+22:03 < mikroskeem> so, you like to reinvent the wheel?
+22:04 < Guest57965> xD
+22:04 < Guest57965> i mean if im coding
+22:05 -!- Jailout2000 [~Jailout20@unaffiliated/jailout2000] has quit [Ping timeout: 240 seconds]
+22:05 < Guest57965> ...
+22:05 < Guest57965> i hate wiki vg
+22:05 < Guest57965> xD
+22:06 < Guest57965> well id 1 is helmet and not 5 like it shows on the wiki vg
+22:06 < Guest57965> its for the newsest version oO can you tell me where i can find the older versions ?
+22:07 -!- Tachyon_ [~Thunderbi@95.76.184.120] has quit [Remote host closed the connection]
+22:08 < mikroskeem> try looking into wiki history
+22:08 < mikroskeem> maybe this? http://wiki.vg/index.php?title=Protocol&oldid=6742#Entity_Equipment
+22:09 < Guest57965> where can i find it :) im not using wiki vg often
+22:09 < Guest57965> yeah
+22:09 < Guest57965> 4: helmet is wrong
+22:09 < Guest57965> 1 is for helmet :|
+22:10 < Guest57965> nevermind its just dont even care which slot is for what well wnything thanks for help :)
+22:11 -!- Guest57965 [25c9602f@gateway/web/cgi-irc/kiwiirc.com/ip.37.201.96.47] has quit [Quit: http://www.kiwiirc.com/ - A hand crafted IRC client]
